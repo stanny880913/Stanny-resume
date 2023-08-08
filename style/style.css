@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #041C32;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #041C32;
+  color: #fff;
+  padding: 2em 0;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  background-image: url("img/cat.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.education {
+  margin-top: 2em;
+}
+
+.education h3 {
+  margin-bottom: 0.5em;
+  font-size: 20px;
+}
+
+.education ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education ul li {
+  margin-bottom: 0.5em;
+}
+.name {
+  margin-left: 1em; /* Add some spacing between the profile picture and the name */
+}
+
+.name h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.name p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* 圓標外框 */
+.circle {
+  display: block;
+  float: left;
+  position: relative;
+  width: 1rem; /* 將寬度設為 1rem */
+  height: 1rem; /* 將高度設為 1rem */
+  background-color: rgba(255, 255, 255, 1);
+  display: block;
+  overflow: hidden;
+  padding: 5%;
+  margin: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1),
+    0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1),
+    0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12),
+    0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+/* 圓標內容 */
+.circle > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none; /* 移除底線 */
+  transition: color 0.5s; /* 添加顏色變化的過渡效果 */
+
+}
+
+/* 圓標外框 */
+.circle > div {
+  color: rgba(255, 255, 255, 1);
+  font-family: Helvetica, Arial Black, Arial;
+  font-size: 2rem;
+}
+
+/* about */
+.circle.about {
+  background-color: #526D82;
+}
+.circle.about > a {
+  color: rgba(255, 255, 255, 1);
+}
+.circle.about > a:hover {
+    color: rgb(187, 185, 185);
+  }
+
+/* projects */
+.circle.projects {
+  background-color: #27374D;
+}
+.circle.projects > a {
+  color: #DDE6ED;
+}
+.circle.projects > a:hover {
+    color: rgb(187, 185, 185);
+  }
+
+/* contact */
+.circle.contact {
+  background-color: #9DB2BF;
+}
+.circle.contact > a {
+  color:#DDE6ED;
+}
+.circle.contact > a:hover {
+    color: #EEEEEE;
+  }
+
+section {
+  padding: 2em;
+}
+
+.project {
+  margin-bottom: 1em;
+}
