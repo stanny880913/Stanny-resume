@@ -40,13 +40,16 @@ header {
 }
 
 .education ul {
-  list-style: none;
+  list-style: inside;
   padding: 0;
 }
 
-.education ul li {
-  margin-bottom: 0.5em;
+.education li strong {
+  margin-bottom: 1em;
+  display: inline-block;
+  width: 100px;
 }
+
 .name {
   margin-left: 1em; /* Add some spacing between the profile picture and the name */
 }
@@ -108,4 +111,66 @@ section {
   background-color: black;
   color: rgb(255, 255, 255);
   transition: background-color 0.3s, color 0.3s; /* 添加過渡特效 */
+}
+
+/* 超連結樣式 */
+.contact li {
+  margin-bottom: 10px;
+}
+
+.contact li strong {
+  display: inline-block;
+  width: 100px;
+}
+
+.contact li a {
+  text-decoration: none;
+  color: #3498db;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+li a:hover {
+  color: #e74c3c;
+}
+
+li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.back-to-top {
+  visibility: hidden;
+  background-color: #2c3e50;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 38px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 90;
+  cursor: pointer;
+  opacity: 0;
+  border-radius: 3px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: all 0.4s;
+}
+
+.back-to-top .fa {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.back-to-top:hover {
+  background-color: #52f7e9;
+  color: #fff;
+  opacity: 1;
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
 }
